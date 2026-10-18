@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title data-ar="شوق الجعفري">Shouq Aljafry</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Shouq Aljafry — Web Developer and Junior SOC Analyst in Riyadh, Saudi Arabia.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Welcome screen: one click unlocks sound (browsers block autoplay) -->
+<div class="welcome" id="welcome">
+  <div class="welcome-card">
+    <button type="button" class="lang-btn" aria-label="Switch language">عربي</button>
+    <img src="girl.jpg" alt="">
+    <h2 data-ar="شوق الجعفري">Shouq Aljafry</h2>
+    <p data-ar="مطوّرة ويب ومحللة أمن سيبراني (SOC)">Web Developer &amp; Junior SOC Analyst</p>
+    <button type="button" class="btn btn-main" id="enter" data-ar="ادخل مع الصوت">Enter with sound</button>
+    <button type="button" class="silent" id="enter-silent" data-ar="ادخل بدون صوت">Enter without sound</button>
+  </div>
+</div>
+
+<header class="topbar">
+  <a class="brand" href="#hello">SA<span>.</span></a>
+  <nav class="nav" aria-label="Sections">
+    <a href="#about" data-ar="نبذة">About</a>
+    <a href="#experience" data-ar="الخبرات">Experience</a>
+    <a href="#projects" data-ar="المشاريع">Projects</a>
+    <a href="#skills" data-ar="المهارات">Skills</a>
+    <a href="#certs" data-ar="الشهادات">Certificates</a>
+    <a href="#contact" data-ar="تواصل">Contact</a>
+  </nav>
+  <button type="button" class="lang-btn" aria-label="Switch language">عربي</button>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="section hero" id="hello" data-audio="voice/hello.mp3"
+    data-stop="8" data-say="Hi! I'm Shouq. Scroll down and I'll walk you through my CV."
+    data-say-ar="هلا والله، السلام عليكم! أنا شوق الجعفري، انزل معي وأعرّفك على سيرتي.">
+    <div class="hero-text">
+      <p class="eyebrow" data-ar="الرياض، المملكة العربية السعودية">Riyadh, Saudi Arabia</p>
+      <h1 data-ar="شوق&lt;br&gt;&lt;em&gt;الجعفري&lt;/em&gt;">Shouq<br><em>Aljafry</em></h1>
+      <p class="role" data-ar="مطوّرة ويب ومحللة أمن سيبراني (SOC)">Web Developer &amp; Junior SOC Analyst</p>
+      <p class="lede" data-ar="أبني تطبيقات الويب وأعرف كيف تُخترق. أحمل دبلومين، واحد في البرمجة وواحد في الأمن السيبراني، ولدي خبرة عملية في الجانبين.">I build web applications and I know how they get attacked. Two diplomas, one in programming and one in cybersecurity, and hands-on work on both sides.</p>
+      <div class="actions">
+        <a class="btn btn-main" href="#contact" data-ar="تواصل معي">Get in touch</a>
+        <a class="btn btn-ghost" href="Shouq_Aljafry_CV.pdf" target="_blank" rel="noopener" data-ar="حمّل السيرة الذاتية PDF">Download CV (PDF)</a>
+      </div>
+    </div>
+
+    <div class="terminal" aria-label="Profile summary">
+      <div class="term-bar"><i></i><i></i><i></i><span>shouq@portfolio:~</span></div>
+      <pre class="term-body" dir="ltr"><span class="c-mute">$</span> whoami
+<span class="c-rose">shouq_aljafry</span>
+
+<span class="c-mute">$</span> cat profile.json
+{
+  <span class="c-key">"focus"</span>: [<span class="c-str">"Secure web dev"</span>, <span class="c-str">"SOC L1"</span>],
+  <span class="c-key">"stack"</span>: [<span class="c-str">"React"</span>, <span class="c-str">"Node.js"</span>, <span class="c-str">"MongoDB"</span>],
+  <span class="c-key">"security"</span>: [<span class="c-str">"Kali Linux"</span>, <span class="c-str">"TCP/IP"</span>],
+  <span class="c-key">"languages"</span>: [<span class="c-str">"Arabic"</span>, <span class="c-str">"English"</span>]
+}
+
+<span class="c-mute">$</span> status --check
+<span class="c-ok">[ OK ]</span> open to work<span class="cursor"></span></pre>
+    </div>
+  </section>
+
+  <!-- ABOUT / OBJECTIVE -->
+  <section class="section" id="about" data-audio="voice/about.mp3"
+    data-stop="70" data-say="This is my goal: build things that work, and keep them safe."
+    data-say-ar="هذا هدفي، أبني مواقع تشتغل صح، وأحميها من الاختراق.">
+    <p class="eyebrow" data-ar="الهدف">Objective</p>
+    <h2 data-ar="مطوّرة تفكر بعقلية المدافع">A developer who thinks like a defender</h2>
+    <div class="about-grid">
+      <p class="about-lead" data-ar="متخصصة في تقنية المعلومات، أحمل دبلوم علوم الحاسب وتقنية المعلومات ودبلوم الأمن السيبراني. بنيت واختبرت واجهات REST API، وأصلحت أخطاء في الواجهات الأمامية والخلفية، ودققت سجلات منشأة كبرى لاكتشاف أي خلل. أبحث عن دور في تطوير الويب أو الدعم الفني أو مركز العمليات الأمنية، أتطور فيه بسرعة وأضيف قيمة من أول يوم.">I am an IT professional with diplomas in Computer Science &amp; IT and in Cyber Security. I have built and tested REST APIs, fixed bugs across the frontend and backend, and audited enterprise records to catch anomalies. I am looking for a role in web development, IT support, or a security operations center where I can grow fast and add value from day one.</p>
+      <ul class="pillars">
+        <li><b data-ar="أبني">Build</b><span data-ar="تطبيقات ويب متكاملة باستخدام React وNode.js وExpress وMongoDB.">Full-stack web apps with React, Node.js, Express and MongoDB.</span></li>
+        <li><b data-ar="أحمي">Protect</b><span data-ar="اكتشاف التهديدات وتقييم الثغرات وأساسيات إدارة المخاطر.">Threat identification, vulnerability assessment and risk basics.</span></li>
+        <li><b data-ar="أدعم">Support</b><span data-ar="حل المشكلات التقنية بوضوح وتواصل هادئ مع المستخدمين.">Clear troubleshooting and calm communication with users.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section" id="experience" data-audio="voice/experience.mp3"
+    data-stop="20" data-say="Here is where I've worked. Two roles, two different skill sets."
+    data-say-ar="وهنا خبراتي، اشتغلت مراقبة جودة، ومطوّرة ويب متدربة.">
+    <p class="eyebrow" data-ar="الخبرات">Experience</p>
+    <h2 data-ar="أين عملت">Where I've worked</h2>
+
+    <ol class="timeline">
+      <li class="job">
+        <div class="job-when"><time data-ar="ديسمبر 2024">Dec 2024</time> – <time data-ar="أبريل 2025">Apr 2025</time></div>
+        <div class="job-body">
+          <h3 data-ar="مراقبة جودة">Quality Controller</h3>
+          <p class="org" data-ar="الخليج للتدريب والتعليم · الشركة السعودية للكهرباء">Al Khaleej Training and Education · Saudi Electricity Company</p>
+          <ul>
+            <li data-ar="دققت سجلات الفواتير والمعاملات لاكتشاف الخلل والتناقضات، وهي نفس مهارة رصد الأنماط التي يستخدمها محلل SOC في تحليل السجلات.">Audited invoice and transaction records to detect anomalies and discrepancies, the same pattern-spotting a SOC analyst uses on logs.</li>
+            <li data-ar="تتبعت المشكلات المرصودة حتى سببها الجذري عبر الأنظمة، مما رفع دقة البيانات.">Traced flagged issues to their root cause across systems, improving data accuracy.</li>
+            <li data-ar="دعمت المستخدمين والعملاء يوميًا عبر ASP وC4C وCisco Jabber مع إدارة عدة تذاكر في الوقت نفسه.">Supported users and customers daily through ASP, C4C and Cisco Jabber while handling multiple tickets at once.</li>
+          </ul>
+          <p class="tags"><span data-ar="رصد الخلل">Anomaly detection</span><span data-ar="تحليل السبب الجذري">Root-cause analysis</span><span data-ar="إدارة التذاكر">Ticketing</span></p>
+        </div>
+      </li>
+      <li class="job">
+        <div class="job-when"><time data-ar="مايو 2024">May 2024</time> – <time data-ar="أكتوبر 2024">Oct 2024</time></div>
+        <div class="job-body">
+          <h3 data-ar="مطوّرة ويب متدربة">Web Developer Trainee</h3>
+          <p class="org">MVP Application &amp; Game Design L.L.C.</p>
+          <ul>
+            <li data-ar="بنيت واختبرت نقاط REST API باستخدام Node.js وExpress مع قاعدة بيانات MongoDB.">Built and tested REST API endpoints in Node.js and Express connected to MongoDB.</li>
+            <li data-ar="شخّصت وأصلحت الأخطاء في واجهات React والأنظمة الخلفية المبنية بـ Node.js.">Diagnosed and fixed bugs across React frontends and Node.js backends.</li>
+            <li data-ar="تحققت من الطلبات والاستجابات عبر Postman، ونشرت المشاريع على Vercel وMongoDB Atlas.">Validated requests and responses in Postman and deployed with Vercel and MongoDB Atlas.</li>
+          </ul>
+          <p class="tags"><span>React.js</span><span>Node.js</span><span>Express</span><span>MongoDB</span><span>Postman</span></p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects"
+    data-stop="62" data-say="This is Leen, an online store I built from front to back."
+    data-say-ar="وهذا مشروعي لين، متجر إلكتروني برمجته من الواجهة لين قاعدة البيانات.">
+    <p class="eyebrow" data-ar="المشاريع">Projects</p>
+    <h2 data-ar="أشياء بنيتها">Things I've built</h2>
+    <article class="project">
+      <div class="project-head">
+        <h3 data-ar="لين — متجر إلكتروني">Leen — E-commerce Web App</h3>
+        <a class="project-link" href="https://github.com/shouql1" target="_blank" rel="noopener" data-ar="الكود على GitHub">View on GitHub</a>
+      </div>
+      <p data-ar="متجر إلكتروني متكامل للقطع الغريبة والمميزة: تيشيرتات وملابس وإكسسوارات وقطع ديكور مثل الفازات، مقسّم إلى عدة أقسام.">A full-stack online store for unique and unusual finds: T-shirts, clothing, accessories and home décor like vases, organized into several category sections.</p>
+      <ul>
+        <li data-ar="بنيت الواجهة الخلفية وواجهة REST API باستخدام Node.js وExpress، وخزّنت المنتجات في MongoDB.">Built the backend and REST API with Node.js and Express, with products stored in MongoDB.</li>
+        <li data-ar="اختبرت كل نقطة اتصال في API عبر Postman قبل ربطها بالواجهة.">Tested every API endpoint in Postman before connecting it to the frontend.</li>
+      </ul>
+      <p class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>React.js</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>REST API</span><span>Postman</span><span>Vercel</span></p>
+    </article>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="section" id="education" data-audio="voice/education.mp3"
+    data-stop="78" data-say="I studied both sides: programming and cybersecurity."
+    data-say-ar="درست دبلومين، واحد في البرمجة، وواحد في الأمن السيبراني.">
+    <p class="eyebrow" data-ar="التعليم">Education</p>
+    <h2 data-ar="دبلومان واتجاه واحد">Two diplomas, one direction</h2>
+    <div class="edu-grid">
+      <article class="edu">
+        <span class="edu-kind" data-ar="دبلوم">Diploma</span>
+        <h3 data-ar="علوم الحاسب وتقنية المعلومات — البرمجة">Computer Science &amp; Information Technology — Programming</h3>
+        <p data-ar="أساسيات البرمجة والشبكات ومبادئ هندسة البرمجيات.">Programming fundamentals, networking basics and software engineering principles.</p>
+      </article>
+      <article class="edu">
+        <span class="edu-kind" data-ar="دبلوم">Diploma</span>
+        <h3 data-ar="الأمن السيبراني">Cyber Security</h3>
+        <p data-ar="اكتشاف التهديدات، وتقييم الثغرات، وإدارة المخاطر، ودراسة حالات البرمجيات الخبيثة وهجمات الشبكات.">Threat identification, vulnerability assessment, risk management, and case studies of malware and network attacks.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills" data-audio="voice/skills.mp3"
+    data-stop="30" data-say="These are my skills. Security, networking, code and data."
+    data-say-ar="وهذي مهاراتي، في الأمن والشبكات والبرمجة والبيانات.">
+    <p class="eyebrow" data-ar="المهارات">Skills</p>
+    <h2 data-ar="الأدوات التي أعمل بها">What I work with</h2>
+    <div class="skill-grid">
+      <div class="skill-group g-rose">
+        <h3 data-ar="الأمن">Security</h3>
+        <p class="chips"><span data-ar="اكتشاف التهديدات">Threat Identification</span><span data-ar="تقييم الثغرات">Vulnerability Assessment</span><span data-ar="إدارة المخاطر">Risk Management</span><span data-ar="الاختراق الأخلاقي">Ethical Hacking</span><span data-ar="التوعية الأمنية">Security Awareness</span></p>
+      </div>
+      <div class="skill-group g-sky">
+        <h3 data-ar="الشبكات والأنظمة">Networking &amp; Systems</h3>
+        <p class="chips"><span>TCP/IP</span><span>DNS</span><span>DHCP</span><span data-ar="حل مشكلات الشبكات">Network Troubleshooting</span><span>Windows</span><span>Kali Linux</span></p>
+      </div>
+      <div class="skill-group g-lav">
+        <h3 data-ar="التطوير">Development</h3>
+        <p class="chips"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>React.js</span><span>Node.js</span><span>Express.js</span><span>REST APIs</span><span>Python</span><span>Java</span><span>C++</span></p>
+      </div>
+      <div class="skill-group g-coral">
+        <h3 data-ar="البيانات والأدوات">Data &amp; Tools</h3>
+        <p class="chips"><span>SQL</span><span>MySQL</span><span>MongoDB</span><span>Power BI</span><span>Excel</span><span>VS Code</span><span>Postman</span><span>Vercel</span><span>Cisco Jabber</span></p>
+      </div>
+    </div>
+    <div class="soft">
+      <h3 data-ar="طريقتي في العمل">How I work</h3>
+      <p data-ar="حل المشكلات · التفكير التحليلي · الانتباه للتفاصيل · اتخاذ القرار · إدارة الوقت · التواصل · العمل الجماعي · المرونة">Problem-solving · Analytical thinking · Attention to detail · Decision-making · Time management · Communication · Teamwork · Adaptability</p>
+    </div>
+  </section>
+
+  <!-- CERTIFICATES -->
+  <section class="section" id="certs" data-audio="voice/certs.mp3"
+    data-stop="72" data-say="And these are my certificates and courses."
+    data-say-ar="وهذي شهاداتي والكورسات اللي أخذتها.">
+    <p class="eyebrow" data-ar="الشهادات والدورات">Certificates &amp; Courses</p>
+    <h2 data-ar="تعلّم مستمر">Always learning</h2>
+    <ul class="cert-grid">
+      <li class="cert c-sec cert-featured"><span class="cert-field"><span data-ar="شهادة مهنية">Professional certification</span> <em class="status" data-ar="قيد الإنجاز">In progress</em></span><b>Blue Team Level 1 (BTL1)</b><small data-ar="Security Blue Team · التدريب في معهد أباد">Security Blue Team · Training at Abad Institute</small></li>
+      <li class="cert c-sec"><span class="cert-field" data-ar="الأمن">Security</span><b data-ar="الاختراق الأخلاقي والأمن السيبراني">Ethical Hacking and Cyber Security</b></li>
+      <li class="cert c-sec"><span class="cert-field" data-ar="الأمن">Security</span><b data-ar="تحليل الأمن السيبراني">Cyber Security Analysis</b></li>
+      <li class="cert c-dev"><span class="cert-field" data-ar="برمجة">Programming</span><b>Python 101</b></li>
+      <li class="cert c-dev"><span class="cert-field" data-ar="برمجة">Programming</span><b>Swift 101</b></li>
+      <li class="cert c-dev"><span class="cert-field" data-ar="ويب">Web</span><b>CSS</b></li>
+      <li class="cert c-data"><span class="cert-field" data-ar="بيانات">Data</span><b>SQL 101</b></li>
+      <li class="cert c-data"><span class="cert-field" data-ar="بيانات">Data</span><b>Power BI</b></li>
+      <li class="cert c-data"><span class="cert-field" data-ar="بيانات">Data</span><b>Microsoft Excel</b></li>
+      <li class="cert c-ux"><span class="cert-field" data-ar="تصميم">Design</span><b data-ar="تصميم تجربة المستخدم">User Experience Design</b></li>
+    </ul>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact" id="contact" data-audio="voice/contact.mp3"
+    data-stop="50" data-say="Thanks for visiting! I'd love to hear from you."
+    data-say-ar="شكراً على زيارتك! يسعدني تتواصل معي.">
+    <p class="eyebrow" data-ar="تواصل">Contact</p>
+    <h2 data-ar="لنعمل معًا">Let's work together</h2>
+    <p class="lede" data-ar="متاحة لفرص في تطوير الويب والدعم الفني وتحليل SOC في الرياض أو عن بُعد.">Open to roles in web development, IT support and SOC analysis in Riyadh or remote.</p>
+    <div class="contact-list">
+      <div class="contact-item">
+        <span class="label" data-ar="البريد">Email</span>
+        <a href="mailto:shoogll886@gmail.com" class="value">shoogll886@gmail.com</a>
+        <button type="button" class="copy" data-copy="shoogll886@gmail.com" data-ar="نسخ">Copy</button>
+      </div>
+      <div class="contact-item">
+        <span class="label" data-ar="الجوال">Phone</span>
+        <a href="tel:+966550437495" class="value" dir="ltr">+966 550 437 495</a>
+        <button type="button" class="copy" data-copy="+966550437495" data-ar="نسخ">Copy</button>
+      </div>
+      <div class="contact-item">
+        <span class="label">LinkedIn</span>
+        <a href="https://www.linkedin.com/in/shouql1" target="_blank" rel="noopener" class="value" dir="ltr">linkedin.com/in/shouql1</a>
+      </div>
+      <div class="contact-item">
+        <span class="label">GitHub</span>
+        <a href="https://github.com/shouql1" target="_blank" rel="noopener" class="value" dir="ltr">github.com/shouql1</a>
+      </div>
+      <div class="contact-item">
+        <span class="label" data-ar="الموقع">Location</span>
+        <span class="value" data-ar="الرياض، المملكة العربية السعودية">Riyadh, Saudi Arabia</span>
+      </div>
+    </div>
+    <div class="actions">
+      <a class="btn btn-main" href="Shouq_Aljafry_CV.pdf" target="_blank" rel="noopener" data-ar="حمّل السيرة الذاتية PDF">Download CV (PDF)</a>
+      <a class="btn btn-ghost" href="https://www.linkedin.com/in/shouql1" target="_blank" rel="noopener" data-ar="تواصل عبر LinkedIn">Connect on LinkedIn</a>
+    </div>
+    <p class="langs" data-ar="اللغات: العربية (اللغة الأم) · الإنجليزية (مستوى مهني)">Languages: Arabic (native) · English (professional working proficiency)</p>
+  </section>
+
+</main>
+
+<!-- The walking guide -->
+<div class="path" aria-hidden="true"></div>
+<div id="walker" aria-live="polite">
+  <div id="bubble" role="status"></div>
+  <button type="button" class="girl" id="girl" aria-label="Mute or unmute the guide">
+    <img src="girl.jpg" alt="Illustrated guide character">
+  </button>
+  <div class="shadow"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
